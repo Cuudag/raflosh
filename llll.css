@@ -39,7 +39,34 @@ body{
     align-items: center;
     height: 100vh;
 }
-
+.flanks{
+    display:flex;
+    column-gap:100px;
+}
+.flank{
+	width:250px;
+    height:70px;
+    display: flex;
+    align-items:center;
+	text-align: center;
+    justify-content:bottom;
+    text-decoration:none;
+    font-size:22px;
+    color:#fff;
+    border-radius:50%;
+	flex:column;
+    outline:2px solid #fff;
+    transition-property : outline-offset , outline-color ,
+    background-color;
+    transition-duration: .25s;
+}
+.flank:hover{
+    outline-offset: 4px;
+}
+.flank--firstblog:hover{
+	background-color:cyan;
+	outline-color:magenta;
+}
 .icons{
     display:flex;
     column-gap:25px;
